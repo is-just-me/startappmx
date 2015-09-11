@@ -9,7 +9,7 @@ function init() {
 	/**
 	 * check the application is installed
 	 */
-	navigator.startApp.check('com.teaway.teamenu', function(message) { /* success */
+	navigator.startAppmx.check('com.teaway.teamenu', function(message) { /* success */
 		console.log(message); // => OK
 	}, 
 	function(error) { /* error */
@@ -19,7 +19,7 @@ function init() {
 	/**
 	 * start application without parameters
 	 */
-	navigator.startApp.start('com.teaway.teamenu', function(message) { /* success */
+	navigator.startAppmx.start('com.teaway.teamenu', function(message) { /* success */
 		console.log(message); // => OK
 	}, 
 	function(error) { /* error */
@@ -29,7 +29,7 @@ function init() {
 	/**
 	 * start application with parameters
 	 */
-	navigator.startApp.start([
+	navigator.startAppmx.start([
 		'com.teaway.teamenu', // applucation
 		'com.teaway.teamenu.MainActivity', // activity
 		'product_id', // key
