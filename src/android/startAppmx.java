@@ -44,7 +44,7 @@ public class startAppmx extends CordovaPlugin {
             this.start(args, callbackContext);
         }
         if (action.equals("mxplay")) {
-            this.start(args, callbackContext);
+            this.mxplay(args, callbackContext);
         }
 		else if(action.equals("check")) {
 			this.check(args.getString(0), callbackContext);
