@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	id="jroure-startappmx"
-	version="0.0.1">
+	id="is-just-me-startappmx"
+	version="0.0.3">
 
     <name>startAppmx</name>
     <description>mxplayer init.</description>
