@@ -1,0 +1,33 @@
+{
+  "name": "is-just-me-startappmx",
+  "version": "0.0.1",
+  "description": "is-just-me-startappmx",
+  "cordova": {
+    "id": "is-just-me-startappmx",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjpearson/cordova-plugin-keyboard.git"
+  },
+  "keywords": [
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.2.0"
+    }
+  ],
+  "author": "jroure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cjpearson/cordova-plugin-keyboard/issues"
+  },
+  "homepage": "https://github.com/cjpearson/cordova-plugin-keyboard#readme"
+}
