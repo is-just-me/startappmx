@@ -191,13 +191,13 @@ public class startAppmx extends CordovaPlugin {
 						 while (iter.hasNext()) {
 							key = iter.next();
 							try {
-								if(key === "sub"){
+								if(key == "sub"){
 									value = Uri.parse(params.getJSONObject(i).getString(key));
 									sub = new Parcelable[] { value };
 									LaunchIntent.putExtra(EXTRA_SUBTITLES, sub);
 									LaunchIntent.putExtra(EXTRA_SUBTITLES_ENABLE, sub);
 								}
-								if(key === "title"){
+								if(key == "title"){
 									title = params.getJSONObject(i).getString(key);
 									LaunchIntent.putExtra(EXTRA_TITLE, title);
 								}
