@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	id="is-just-me-startappmx"
-	version="0.0.4">
+	version="0.0.6">
 
     <name>startAppmx</name>
     <description>mxplayer init.</description>
