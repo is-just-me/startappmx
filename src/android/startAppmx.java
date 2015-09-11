@@ -192,14 +192,11 @@ public class startAppmx extends CordovaPlugin {
 							key = iter.next();
 							try {
 								if(key == "sub"){
-									value = Uri.parse(params.getJSONObject(i).getString(key));
-									sub = new Parcelable[] { value };
-									LaunchIntent.putExtra(EXTRA_SUBTITLES, sub);
-									LaunchIntent.putExtra(EXTRA_SUBTITLES_ENABLE, sub);
+									LaunchIntent.putExtra(EXTRA_SUBTITLES, new Parcelable[] { Uri.parse(params.getJSONObject(i).getString(key)) });
+									LaunchIntent.putExtra(EXTRA_SUBTITLES_ENABLE, new Parcelable[] { Uri.parse(params.getJSONObject(i).getString(key)) });
 								}
 								if(key == "title"){
-									title = params.getJSONObject(i).getString(key);
-									LaunchIntent.putExtra(EXTRA_TITLE, title);
+									LaunchIntent.putExtra(EXTRA_TITLE, params.getJSONObject(i).getString(key));
 								}
 							} catch (JSONException e) {
 								callback.error("json params: " + e.toString());
