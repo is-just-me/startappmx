@@ -1,4 +1,4 @@
-package com.is-just-me.startappmx;
+package com.jroure.startappmx;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;

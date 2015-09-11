@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	id="is-just-me-startappmx"
+	id="jroure-startappmx"
 	version="0.0.1">
 
     <name>startAppmx</name>
     <description>mxplayer init.</description>
     <license>MIT</license>
-    <keywords>cordova,startappmx,is-just-me</keywords>
+    <keywords>cordova,startappmx,jroure</keywords>
 
     <js-module src="www/startApp.js" name="startappmx">
         <merges target="navigator.startAppmx" />
@@ -17,11 +17,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="startAppmx">
-                <param name="android-package" value="com.is-just-me.startappmx.startAppmx"/>
+                <param name="android-package" value="com.jroure.startappmx.startAppmx"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/startAppmx.java" target-dir="src/com/is-just-me/startappmx" />
+        <source-file src="src/android/startAppmx.java" target-dir="src/com/jroure/startappmx" />
     </platform>
 
 </plugin>

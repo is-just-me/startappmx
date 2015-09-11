@@ -1,4 +1,4 @@
-cordova.define("com.is-just-me.startappmx.startAppmx", function(require, exports, module) {
+cordova.define("com.jroure.startappmx.startAppmx", function(require, exports, module) {
 /**
 	com.venkykowshik.startapp
 	https://github.com/venkykowshik/com.venkykowshik.startapp
