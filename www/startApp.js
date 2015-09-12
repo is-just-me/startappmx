@@ -30,7 +30,7 @@ module.exports = {
 	 */
 	start: function(message, completeCallback, errorCallback) {
 		exec(completeCallback, errorCallback, "startAppmx", "start", (typeof message === 'string') ? [message] : message);
-	}
+	},
 	mxplay: function(message, completeCallback, errorCallback) {
 		exec(completeCallback, errorCallback, "startAppmx", "mxplay", (typeof message === 'string') ? [message] : message);
 	}	
