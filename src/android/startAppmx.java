@@ -48,6 +48,8 @@ public class startAppmx extends CordovaPlugin {
         }
 		else if(action.equals("check")) {
 			this.check(args.getString(0), callbackContext);
+		} else if(action.equals("startwaze")) {
+			this.startwaze(args.getString(0), callbackContext);
 		}
 		
 		return true;
@@ -134,6 +136,19 @@ public class startAppmx extends CordovaPlugin {
 		} catch (Exception e) {
 			callback.error("intent: " + e.toString());
         }
+    }
+    public void startwaze(String waze_url, CallbackContext callback) {
+    	try
+		{
+		   String url = waze_url;
+		   Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( url ) );
+		   startActivity( intent );
+		}
+		catch ( ActivityNotFoundException ex  )
+		{
+		  Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( "market://details?id=com.waze" ) );
+		  startActivity(intent);
+		}
     }
     public void mxplay(JSONArray args, CallbackContext callback) {
 		

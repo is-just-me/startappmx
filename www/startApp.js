@@ -21,6 +21,9 @@ module.exports = {
 	check: function(message, completeCallback, errorCallback) {
 		exec(completeCallback, errorCallback, "startAppmx", "check", [message]);
 	},
+	startwaze: function(message, completeCallback, errorCallback) {
+		exec(completeCallback, errorCallback, "startAppmx", "startwaze", [message]);
+	},
 	/** 
 	 * Start application on device
 	 *
