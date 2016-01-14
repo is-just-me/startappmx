@@ -142,12 +142,14 @@ public class startAppmx extends CordovaPlugin {
 		{
 		   String url = waze_url;
 		   Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( url ) );
-		   startActivity( intent );
+		   this.cordova.getActivity().startActivity(intent);
+		   callback.success();
 		}
 		catch ( ActivityNotFoundException ex  )
 		{
 		  Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( "market://details?id=com.waze" ) );
-		  startActivity(intent);
+		  this.cordova.getActivity().startActivity(intent);
+		  callback.error("no esta instalado waze vamos al market");
 		}
     }
     public void mxplay(JSONArray args, CallbackContext callback) {
